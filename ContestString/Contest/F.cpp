@@ -3,24 +3,23 @@ using namespace std;
 
 // Infinite Replacement
 /*
-    If there are letters 'a' in string t, 
-    then the moves can be performed endlessly. 
-    If t itself is equal to "a", then the string won't change, 
-    so the answer is 1. Otherwise, the length of t is least 2, 
-    so string s will be increasing in length after each move, 
-    and the answer is -1.
+    Si hay letras 'a' en la cadena t,
+     entonces los movimientos se pueden realizar sin fin.
+     Si t mismo es igual a "a", entonces la cadena no cambiará,
+     por lo que la respuesta es 1. De lo contrario, la longitud de t es al menos 2,
+     entonces la cadena s aumentará en longitud después de cada movimiento,
+     y la respuesta es -1.
 
-    If there are no letters 'a' in string t, then the resulting 
-    string is only determined by whichever letters 'a' we chose 
-    to replace with t. That's because once we replace a letter 
-    'a' with string t, we can do nothing with the new letters 
-    anymore. 
+     Si no hay letras 'a' en la cadena t, entonces el resultado
+     la cadena solo está determinada por las letras 'a' que elegimos
+     para reemplazar con t. Eso es porque una vez que reemplazamos una letra
+     'a' con la cadena t, no podemos hacer nada con las nuevas letras agregadas.
     
-    We can actually imagine that t is equal to "b", and 
-    the answer won't change. Now it's easy to see that the answer 
-    is equal to the number of strings of length n, consisting only 
-    of letters 'a' and 'b'. There are two options for each position, 
-    and there are n positions, so the answer is 2^n.
+     De hecho, podemos imaginar que t es igual a "b", y
+     la respuesta no cambiará. Ahora es fácil ver que la respuesta
+     es igual al número de cadenas de longitud n que consisten solo
+     de las letras 'a' y 'b'. Hay dos opciones para cada posición,
+     y hay n posiciones, entonces la respuesta es 2^n.
 */
 void solve(){
     string s; cin >> s;
