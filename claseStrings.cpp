@@ -93,5 +93,9 @@ int main(){
     sort(str6.begin(), str6.end());
     cout << str6 << endl;
 
-	return 0;
+// Reverse a string
+    reverse(str6.begin(), str6.end());
+    cout << str6 << endl;
+    
+    return 0;
 }
